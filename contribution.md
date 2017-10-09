@@ -40,6 +40,17 @@ Also the source code changes between particular versions should be kept as small
 
 When some version or even whole package retires (gets EOL), the sources are kept in the repository, but one cannot expect any changes. It is always on decision of the maintainer, whether the PR will cover the older versions, but no review should be expected.
 
+### Adding a new version
+
+When we add a new version to the existing repository, we want to ideally keep the git history in the newest version, so the recommended way of adding a new version directory is this (suppose we add version 2.0 and the previous latest one is 1.9):
+
+    $> git mv 1.9 2.0
+    $> git commit
+    $> cp -r 2.0 1.9
+    $> git add 1.9
+    $> git commit
+    
+This way the git history will be lost in 1.9, but will be kept in 2.0. At this point the content of 2.0 is the same as 1.9, so the next step is to do all necessary changes in 2.0 directory.
 
 ## Distributions
 
