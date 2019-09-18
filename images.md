@@ -10,6 +10,8 @@ The following is a list of container images maintained in this organization. Mos
 | ------------ | ------------------- | -------------- |
 | [5.6](https://github.com/sclorg/s2i-php-container/tree/master/5.6) | [rhscl/php-56-rhel7](https://access.redhat.com/containers/#/registry.access.redhat.com/rhscl/php-56-rhel7) | [centos/php-56-centos7](https://hub.docker.com/r/centos/php-56-centos7/) |
 | [7.0](https://github.com/sclorg/s2i-php-container/tree/master/7.0) | [rhscl/php-70-rhel7](https://access.redhat.com/containers/#/registry.access.redhat.com/rhscl/php-70-rhel7) | [centos/php-70-centos7](https://hub.docker.com/r/centos/php-70-centos7/) |
+| [7.1](https://github.com/sclorg/s2i-php-container/tree/master/7.1) | [rhscl/php-71-rhel7](https://access.redhat.com/containers/#/registry.access.redhat.com/rhscl/php-71-rhel7) | [centos/php-71-centos7](https://hub.docker.com/r/centos/php-71-centos7/) |
+| [7.2](https://github.com/sclorg/s2i-php-container/tree/master/7.2) | [rhscl/php-72-rhel7](https://access.redhat.com/containers/#/registry.access.redhat.com/rhscl/php-72-rhel7) | [centos/php-72-centos7](https://hub.docker.com/r/centos/php-72-centos7/) |
 
 
 ## Python
@@ -19,7 +21,7 @@ The following is a list of container images maintained in this organization. Mos
 | [2.7](https://github.com/sclorg/s2i-python-container/tree/master/2.7) | [rhscl/python-27-rhel7](https://access.redhat.com/containers/#/registry.access.redhat.com/rhscl/python-27-rhel7) | [centos/python-27-centos7](https://hub.docker.com/r/centos/python-27-centos7/) |
 | [3.4](https://github.com/sclorg/s2i-python-container/tree/master/3.4) | [rhscl/python-34-rhel7](https://access.redhat.com/containers/#/registry.access.redhat.com/rhscl/python-34-rhel7) | [centos/python-34-centos7](https://hub.docker.com/r/centos/python-34-centos7/) |
 | [3.5](https://github.com/sclorg/s2i-python-container/tree/master/3.5) | [rhscl/python-35-rhel7](https://access.redhat.com/containers/#/registry.access.redhat.com/rhscl/python-35-rhel7) | [centos/python-35-centos7](https://hub.docker.com/r/centos/python-35-centos7/) |
-
+| [3.6](https://github.com/sclorg/s2i-python-container/tree/master/3.6) | [rhscl/python-36-rhel7](https://access.redhat.com/containers/#/registry.access.redhat.com/rhscl/python-36-rhel7) | [centos/python-36-centos7](https://hub.docker.com/r/centos/python-36-centos7/) |
 
 ## Perl
 
@@ -27,6 +29,7 @@ The following is a list of container images maintained in this organization. Mos
 | ------------ | ------------------- | -------------- |
 | [5.20](https://github.com/sclorg/s2i-perl-container/tree/master/5.20) | [rhscl/perl-520-rhel7](https://access.redhat.com/containers/#/registry.access.redhat.com/rhscl/perl-520-rhel7) | [centos/perl-520-centos7](https://hub.docker.com/r/centos/perl-520-centos7/) |
 | [5.24](https://github.com/sclorg/s2i-perl-container/tree/master/5.24) | [rhscl/perl-524-rhel7](https://access.redhat.com/containers/#/registry.access.redhat.com/rhscl/perl-524-rhel7) | [centos/perl-524-centos7](https://hub.docker.com/r/centos/perl-524-centos7/) |
+| [5.26](https://github.com/sclorg/s2i-perl-container/tree/master/5.26) | [rhscl/perl-526-rhel7](https://access.redhat.com/containers/#/registry.access.redhat.com/rhscl/perl-526-rhel7) | [centos/perl-526-centos7](https://hub.docker.com/r/centos/perl-526-centos7/) |
 
 
 ## Ruby
@@ -36,13 +39,7 @@ The following is a list of container images maintained in this organization. Mos
 | [2.2](https://github.com/sclorg/s2i-ruby-container/tree/master/2.2) | [rhscl/ruby-22-rhel7](https://access.redhat.com/containers/#/registry.access.redhat.com/rhscl/ruby-22-rhel7) | [centos/ruby-22-centos7](https://hub.docker.com/r/centos/ruby-22-centos7/) |
 | [2.3](https://github.com/sclorg/s2i-ruby-container/tree/master/2.3) | [rhscl/ruby-23-rhel7](https://access.redhat.com/containers/#/registry.access.redhat.com/rhscl/ruby-23-rhel7) | [centos/ruby-23-centos7](https://hub.docker.com/r/centos/ruby-23-centos7/) |
 | [2.4](https://github.com/sclorg/s2i-ruby-container/tree/master/2.4) | [rhscl/ruby-24-rhel7](https://access.redhat.com/containers/#/registry.access.redhat.com/rhscl/ruby-24-rhel7) | [centos/ruby-24-centos7](https://hub.docker.com/r/centos/ruby-24-centos7/) |
-
-
-## Passenger
-
-| **version**  | **Red Hat Catalog** | **Docker Hub** |
-| ------------ | ------------------- | -------------- |
-| [4.0](https://github.com/sclorg/passenger-container/tree/master/4.0) | [rhscl/passenger-40-rhel7](https://access.redhat.com/containers/#/registry.access.redhat.com/rhscl/passenger-40-rhel7) | [centos/passenger-40-centos7](https://hub.docker.com/r/centos/passenger-40-centos7/) |
+| [2.5](https://github.com/sclorg/s2i-ruby-container/tree/master/2.5) | [rhscl/ruby-25-rhel7](https://access.redhat.com/containers/#/registry.access.redhat.com/rhscl/ruby-25-rhel7) | [centos/ruby-25-centos7](https://hub.docker.com/r/centos/ruby-25-centos7/) |
 
 
 ## Varnish
@@ -58,6 +55,8 @@ The following is a list of container images maintained in this organization. Mos
 | ------------ | ------------------- | -------------- |
 | [1.8](https://github.com/sclorg/nginx-container/tree/master/1.8) | [rhscl/nginx-18-rhel7](https://access.redhat.com/containers/#/registry.access.redhat.com/rhscl/nginx-18-rhel7) | [centos/nginx-18-centos7](https://hub.docker.com/r/centos/nginx-18-centos7/) |
 | [1.10](https://github.com/sclorg/nginx-container/tree/master/1.10) | [rhscl/nginx-110-rhel7](https://access.redhat.com/containers/#/registry.access.redhat.com/rhscl/nginx-110-rhel7) | [centos/nginx-110-centos7](https://hub.docker.com/r/centos/nginx-110-centos7/) |
+| [1.12](https://github.com/sclorg/nginx-container/tree/master/1.12) | [rhscl/nginx-112-rhel7](https://access.redhat.com/containers/#/registry.access.redhat.com/rhscl/nginx-112-rhel7) | [centos/nginx-112-centos7](https://hub.docker.com/r/centos/nginx-112-centos7/) |
+| [1.14](https://github.com/sclorg/nginx-container/tree/master/1.14) | [rhscl/nginx-114-rhel7](https://access.redhat.com/containers/#/registry.access.redhat.com/rhscl/nginx-114-rhel7) | [centos/nginx-114-centos7](https://hub.docker.com/r/centos/nginx-114-centos7/) |
 
 ## Node.JS
 
@@ -65,7 +64,8 @@ The following is a list of container images maintained in this organization. Mos
 | ------------ | ------------------- | -------------- |
 | [4](https://github.com/sclorg/s2i-nodejs-container/tree/master/4) | [rhscl/nodejs-4-rhel7](https://access.redhat.com/containers/#/registry.access.redhat.com/rhscl/nodejs-4-rhel7) | [centos/nodejs-4-centos7](https://hub.docker.com/r/centos/nodejs-4-centos7/) |
 | [6](https://github.com/sclorg/s2i-nodejs-container/tree/master/6) | [rhscl/nodejs-6-rhel7](https://access.redhat.com/containers/#/registry.access.redhat.com/rhscl/nodejs-6-rhel7) | [centos/nodejs-6-centos7](https://hub.docker.com/r/centos/nodejs-6-centos7/) |
-
+| [8](https://github.com/sclorg/s2i-nodejs-container/tree/master/8) | [rhscl/nodejs-8-rhel7](https://access.redhat.com/containers/#/registry.access.redhat.com/rhscl/nodejs-8-rhel7) | [centos/nodejs-8-centos7](https://hub.docker.com/r/centos/nodejs-8-centos7/) |
+| [10](https://github.com/sclorg/s2i-nodejs-container/tree/master/10) | [rhscl/nodejs-10-rhel7](https://access.redhat.com/containers/#/registry.access.redhat.com/rhscl/nodejs-10-rhel7) | [centos/nodejs-10-centos7](https://hub.docker.com/r/centos/nodejs-10-centos7/) |
 
 ## Apache httpd
 
@@ -103,6 +103,7 @@ The following is a list of container images maintained in this organization. Mos
 | **version**  | **Red Hat Catalog** | **Docker Hub** |
 | ------------ | ------------------- | -------------- |
 | [3.2](https://github.com/sclorg/redis-container/tree/master/3.2) | [rhscl/redis-32-rhel7](https://access.redhat.com/containers/#/registry.access.redhat.com/rhscl/redis-32-rhel7) | [centos/redis-32-centos7](https://hub.docker.com/r/centos/redis-32-centos7/) |
+| [5](https://github.com/sclorg/redis-container/tree/master/5) | [rhscl/redis-5-rhel7](https://access.redhat.com/containers/#/registry.access.redhat.com/rhscl/redis-5-rhel7) |  |
 
 
 ## MongoDB
@@ -111,6 +112,8 @@ The following is a list of container images maintained in this organization. Mos
 | ------------ | ------------------- | -------------- |
 | [2.6](https://github.com/sclorg/mongodb-container/tree/master/2.6) | [rhscl/mongodb-26-rhel7](https://access.redhat.com/containers/#/registry.access.redhat.com/rhscl/mongodb-26-rhel7) | [centos/mongodb-26-centos7](https://hub.docker.com/r/centos/mongodb-26-centos7/) |
 | [3.2](https://github.com/sclorg/mongodb-container/tree/master/3.2) | [rhscl/mongodb-32-rhel7](https://access.redhat.com/containers/#/registry.access.redhat.com/rhscl/mongodb-32-rhel7) | [centos/mongodb-32-centos7](https://hub.docker.com/r/centos/mongodb-32-centos7/) |
+| [3.4](https://github.com/sclorg/mongodb-container/tree/master/3.4) | [rhscl/mongodb-34-rhel7](https://access.redhat.com/containers/#/registry.access.redhat.com/rhscl/mongodb-34-rhel7) | [centos/mongodb-34-centos7](https://hub.docker.com/r/centos/mongodb-34-centos7/) |
+| [3.6](https://github.com/sclorg/mongodb-container/tree/master/3.6) | [rhscl/mongodb-36-rhel7](https://access.redhat.com/containers/#/registry.access.redhat.com/rhscl/mongodb-36-rhel7) | [centos/mongodb-36-centos7](https://hub.docker.com/r/centos/mongodb-36-centos7/) |
 
 
 ## MySQL
@@ -119,6 +122,7 @@ The following is a list of container images maintained in this organization. Mos
 | ------------ | ------------------- | -------------- |
 | [5.6](https://github.com/sclorg/mysql-container/tree/master/5.6) | [rhscl/mysql-56-rhel7](https://access.redhat.com/containers/#/registry.access.redhat.com/rhscl/mysql-56-rhel7) | [centos/mysql-56-centos7](https://hub.docker.com/r/centos/mysql-56-centos7/) |
 | [5.7](https://github.com/sclorg/mysql-container/tree/master/5.7) | [rhscl/mysql-57-rhel7](https://access.redhat.com/containers/#/registry.access.redhat.com/rhscl/mysql-57-rhel7) | [centos/mysql-57-centos7](https://hub.docker.com/r/centos/mysql-57-centos7/) |
+| [8.0](https://github.com/sclorg/mysql-container/tree/master/8.0) | [rhscl/mysql-80-rhel7](https://access.redhat.com/containers/#/registry.access.redhat.com/rhscl/mysql-80-rhel7) | [centos/mysql-80-centos7](https://hub.docker.com/r/centos/mysql-80-centos7/) |
 
 
 ## MariaDB
@@ -127,14 +131,16 @@ The following is a list of container images maintained in this organization. Mos
 | ------------ | ------------------- | -------------- |
 | [10.0](https://github.com/sclorg/mariadb-container/tree/master/10.0) | [rhscl/mariadb-100-rhel7](https://access.redhat.com/containers/#/registry.access.redhat.com/rhscl/mariadb-100-rhel7) | [centos/mariadb-100-centos7](https://hub.docker.com/r/centos/mariadb-100-centos7/) |
 | [10.1](https://github.com/sclorg/mariadb-container/tree/master/10.1) | [rhscl/mariadb-101-rhel7](https://access.redhat.com/containers/#/registry.access.redhat.com/rhscl/mariadb-101-rhel7) | [centos/mariadb-101-centos7](https://hub.docker.com/r/centos/mariadb-101-centos7/) |
+| [10.2](https://github.com/sclorg/mariadb-container/tree/master/10.2) | [rhscl/mariadb-102-rhel7](https://access.redhat.com/containers/#/registry.access.redhat.com/rhscl/mariadb-102-rhel7) | [centos/mariadb-102-centos7](https://hub.docker.com/r/centos/mariadb-101-centos7/) |
+| [10.3](https://github.com/sclorg/mariadb-container/tree/master/10.3) | [rhscl/mariadb-103-rhel7](https://access.redhat.com/containers/#/registry.access.redhat.com/rhscl/mariadb-103-rhel7) |  |
 
 
 ## PostgreSQL
 
 | **version**  | **Red Hat Catalog** | **Docker Hub** |
 | ------------ | ------------------- | -------------- |
-| [9.4](https://github.com/sclorg/postgresql-container/tree/master/9.4) | [rhscl/postgresql-94-rhel7](https://access.redhat.com/containers/#/registry.access.redhat.com/rhscl/postgresql-94-rhel7) | [centos/postgresql-94-centos7](https://hub.docker.com/r/centos/postgresql-94-centos7/) |
-| [9.5](https://github.com/sclorg/postgresql-container/tree/master/9.5) | [rhscl/postgresql-95-rhel7](https://access.redhat.com/containers/#/registry.access.redhat.com/rhscl/postgresql-95-rhel7) | [centos/postgresql-95-centos7](https://hub.docker.com/r/centos/postgresql-95-centos7/) |
+| [9.6](https://github.com/sclorg/postgresql-container/tree/generated/9.6) | [rhscl/postgresql-96-rhel7](https://access.redhat.com/containers/?tab=overview#/registry.access.redhat.com/rhscl/postgresql-96-rhel7) | [centos/postgresql-96-centos7](https://hub.docker.com/r/centos/postgresql-96-centos7/) |
+| [10](https://github.com/sclorg/postgresql-container/tree/generated/10) | [rhscl/postgresql-10-rhel7](https://access.redhat.com/containers/?tab=overview#/registry.access.redhat.com/rhscl/postgresql-10-rhel7) | [centos/postgresql-10-centos7](https://hub.docker.com/r/centos/postgresql-10-centos7/) |
 
 
 ## Ruby on Rails
