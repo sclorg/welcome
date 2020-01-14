@@ -52,7 +52,7 @@ When we add a new version to the existing repository, we want to ideally keep th
     
 This way the git history will be lost in 1.9, but will be kept in 2.0. At this point the content of 2.0 is the same as 1.9, so the next step is to do all necessary changes in 2.0 directory.
 
-As soon as the newest version exists in git, then test whether a build is passing and corresponding packages are available.
+When adding the changes for a new version please modify each of the Dockerfiles even if the image cannot be built yet.  You can add `.exclude-$OS` files for images that should not be built via the build scripts.
 
 E.g. If the building failed for CentOS, Fedora, and RHEL-7 then add these files into the relevant version like `2.0/.exclude-centos7`, `2.0/.exclude-fedora`, `2.0/.exclude-rhel7`.
 These files mean that the new version will not be built accidentally.
