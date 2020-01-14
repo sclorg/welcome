@@ -57,7 +57,7 @@ When adding the changes for a new version please modify each of the Dockerfiles 
 E.g. If the building failed for CentOS, Fedora, and RHEL-7 then add these files into the relevant version like `2.0/.exclude-centos7`, `2.0/.exclude-fedora`, `2.0/.exclude-rhel7`.
 These files mean that the new version will not be built accidentally.
 
-As soon as the packages are available for given distribution, then delete corresponding `.exclude` file.
+Delete the corresponding `.exclude-$OS` files once the image can built using testing/production rpms.
 
 ## Distributions
 
