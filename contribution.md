@@ -76,7 +76,7 @@ Published images are can be then found here:
 - CentOS7 images in https://quay.io/organization/centos7
 - CentOS Stream 8 and CentOS Stream 9 in https://quay.io/organization/sclorg
 
-In order to create repository for relevant organization asl phracek@redhat.com, pkubat@redhat.com, hhorak@redhat.com, or zmiklank@redhat.com.
+In order to create repository for relevant organization ask phracek@redhat.com, pkubat@redhat.com, hhorak@redhat.com, or zmiklank@redhat.com.
 In the created repositories add also robot account which is mandatory for publishing images.
 
 For Fedora case, you need ask for adding robot account cverna@redhat.com, but ask SCLORG team.
