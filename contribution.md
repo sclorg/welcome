@@ -1,14 +1,14 @@
 # Contributing to Container Images
 
-This document outlines the guidelines and best practices for contributing to the container images within the [sclorg organization](http://github.com/sclorg/) on GitHub.
+This document outlines the guidelines and best practices for contributing to the container images within the [SCLOrg](http://github.com/sclorg/) on GitHub.
 
 ## Pull Requests
 
-All modifications to the repositories and images must be submitted via a pull request (PR) and undergo review by another maintainer before merging. Exceptionally, small and obvious changes that pose no risk (such as fixing typos in documentation) may be merged or committed without review.
+All modifications to the repositories and images must be submitted via a Pull Request (PR) and undergo review by another maintainer before merging. Exceptionally, small and obvious changes that pose no risk (such as fixing typos in documentation) may be merged or committed without review.
 
 ## Dockerfile Guidelines
 
-The images under sclorg organization generally follow [Container Best Practices](http://docs.projectatomic.io/container-best-practices/). Please read through them before submitting a PR.
+The images under SCLOrg generally follow [Container Best Practices](http://docs.projectatomic.io/container-best-practices/). Please read through them before submitting a PR.
 
 As for names and labels, [guidelines available here](https://github.com/projectatomic/ContainerApplicationGenericLabels/) are followed.
 
@@ -31,6 +31,22 @@ Git repositories follow the pattern `<name>-container` where the `<name>` is the
 
 Every repository contains directories with particular major versions. For example, MySQL repository includes directories 5.5, 5.6, and 5.7.
 
+
+### Labels
+
+Every repository has its own labels which help categorize and prioritize issues and pull requests, making it easier for contributors to understand the status and purpose of each item. However, we also have a few global labels used across all repositories.
+
+Here's a brief explanation of the common labels:
+
+1. **bug**: Indicates an issue that describes a defect or problem in the software.
+2. **duplicate**: Marks an issue or pull request that has already been reported or submitted and is identical or very similar to an existing one.
+3. **enhancement**: Signifies a request for a new feature or improvement to an existing feature.
+4. **help wanted**: Suggests that the issue or pull request needs assistance from other contributors or maintainers.
+5. **invalid**: Highlights an issue or pull request that is deemed inappropriate, incorrect, or not relevant to the project.
+6. **question**: Denotes an item that is primarily seeking clarification or further information.
+7. **ready for review**: Indication that an issue or pull request has been completed and is now awaiting review from team members or maintainers. You can find all items with this label using this [query](https://github.com/search?q=org%3Asclorg+label%3A%22ready+for+review%22+state%3Aopen&type=Issues).
+8. **wontfix**: Implies that the maintainers or contributors have decided not to address the issue or implement the requested change.
+
 ### Active versions
 
 Actively maintained versions should be kept as close to each other as possible -- both source-code-wise and feature-wise. It means maintainers should try to keep the list of use cases supported in the different versions the same, if possible.
@@ -49,7 +65,7 @@ Adding a new version of an image to an existing repository involves three main s
 
 Initially, the corresponding `$VERSION` and `$OS` combination must be added to the testing configuration files. The `.github/workflows/container-tests.yml` file contains the configuration for container testing, while the `.github/workflows/openshift-tests.yml` file includes the configuration for testing containers in OpenShift 4.
 
-Testing must be enabled in a separate pull request, which should be merged before the pull request containing the actual version addition is tested.
+Testing must be enabled in a separate Pull Request, which should be merged before the Pull Request containing the actual version addition is tested.
 
 #### 2) Add Sources
 
@@ -94,10 +110,10 @@ You should be informed about each repository package's requirements, as they can
 
 1. Fork the repository
 2. Run `git submodule update --init` to download the `common` submodule with `common/common.mk` makefile. We use this submodule for common tests and functions across all our repositories.
-3. Add a feature or bug fix\*
-4. Consider doing the CI tests as shown below in the Test section
-5. Commit generated files with conventional commit message syntax
-6. Open a pull request!
+3. Implement a new feature or bug fix\*
+4. Consider running CI tests, as described in the Testing section (and in each repository)
+5. Commit the files and generated files in two separated commits with a conventional commit message for each.
+6. Open a Pull Request for review!
 
 \*Look at specific repository contribution rules. A small amount of repositories have a distgen-enabled `/src` folder, and you will need to regenerate files with the `common.mk` makefile.
 
@@ -117,7 +133,7 @@ For RHEL, we install packages from RHEL 7 base or Red Hat [Software Collections]
 
 ## Testing
 
-This organisation's images include test suites, which test the images in basic use cases.
+This organization's images include test suites, which test the images in basic use cases.
 The tests are being run on [Testing Farm](https://docs.testing-farm.io/general/0.1/index.html). Testing is done before the change is merged into the master branch (main branch). Therefore the place for triggering tests on demand is in a Pull Request.
 
 ### Triggering tests
