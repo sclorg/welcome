@@ -14,7 +14,7 @@ As for names and labels, [guidelines available here](https://github.com/projecta
 
 ### OpenShift
 
-Ideally, all the images available under sclorg should work fine in the OpenShift environment. For more about what is required from developers, read the [Guidelines for writing Dockerfiles for OpenShift](https://docs.openshift.com/enterprise/3.0/creating_images/guidelines.html).
+Ideally, all the images available under sclorg should work fine in the OpenShift environment. For more about what is required from developers, read the [Guidelines for writing Dockerfiles for OpenShift](https://docs.redhat.com/en/documentation/openshift_container_platform/4.20/html/images/creating-images).
 
 ## Repositories
 
@@ -29,7 +29,7 @@ Git repositories follow the pattern `<name>-container` where the `<name>` is the
 
 ### Directory structure
 
-Every repository contains directories with particular major versions. For example, MySQL repository includes directories 5.5, 5.6, and 5.7.
+Every repository contains directories with particular major versions. For example, [MySQL repository](https://github.com/sclorg/mysql-container/) includes directories `8.0`, and `8.4`.
 
 
 ### Labels
@@ -59,7 +59,7 @@ When a specific version or an entire package reaches its end-of-life (EOL), the 
 
 ### Adding a New Version of an Image
 
-Adding a new version of an image to an existing repository involves three main steps. First, update the testing configuration files to include the new `$VERSION` and `$OS` combination. Next, make necessary changes to the new version directory while retaining the git history for the latest version. Lastly, modify the build configuration file and create a repository to make the new images available on [quay.io](quay.io). Detailed instructions for each step can be found below.
+Adding a new version of an image to an existing repository involves three main steps. First, update the testing configuration files to include the new `$VERSION` and `$OS` combination. Next, make necessary changes to the new version directory while retaining the git history for the latest version. Lastly, modify the build configuration file and create a repository to make the new images available on [quay.io](https://quay.io/). Detailed instructions for each step can be found below.
 
 #### 1) Enable Testing
 
@@ -89,15 +89,14 @@ Once the image can be built using testing or production RPMs, delete the corresp
 
 #### 3) Enable Publishing
 
-To make the images available on [quay.io](quay.io), update the `.github/workflows/build-and-push.yml` configuration file with the appropriate `$OS` and `$VERSION`.
+To make the images available on [quay.io](https://quay.io/), update the `.github/workflows/build-and-push.yml` configuration file with the appropriate `$OS` and `$VERSION`.
 
 Published images can be found at the following locations:
 
-- Fedora images: https://quay.io/organization/fedora
-- CentOS7 images: https://quay.io/organization/centos7
-- CentOS Stream 8 and CentOS Stream 9 images: https://quay.io/organization/sclorg
+- Fedora images: [https://quay.io/organization/fedora](https://quay.io/organization/fedora)
+- CentOS Stream 9 and CentOS Stream 10 images: [https://quay.io/organization/sclorg](https://quay.io/organization/sclorg)
 
-To create a repository for the relevant organizations, contact phracek@redhat.com, pkubat@redhat.com, hhorak@redhat.com, or zmiklank@redhat.com. In the created repositories, add a robot account, which is necessary for publishing images.
+To create a repository for the relevant organizations, contact phracek@redhat.com, pkubat@redhat.com or hhorak@redhat.com. In the created repositories, add a robot account, which is necessary for publishing images.
 
 In the case of Fedora, request the addition of a robot account by contacting cverna@redhat.com, but consult the SCLORG team first.
 
@@ -119,30 +118,24 @@ You should be informed about each repository package's requirements, as they can
 
 ## Distributions
 
-Currently, there are Dockerfiles available for RHEL 7, RHEL 8, RHEL 9, CentOS 7, CentOS Stream 8, CentOS Stream 9, and Fedora distributions. However, not every image version is available for each distribution.
+Currently, there are Dockerfiles available for RHEL 8, RHEL 9, RHEL 10, CentOS Stream 9, CentOS Stream 10 and Fedora distributions. However, not every image version is available for each distribution.
 
 ## Packages installing in Dockerfile
 
 When installing packages in the Dockerfile, it is important to ensure that all packages come from official repositories and are installed using conventional methods such as YUM or DNF. Only scripts that are available in these repositories should be added to the images on top of the RPM data.
 
-For Fedora images, we aim to use the modules from [Modularity effort](https://docs.pagure.org/modularity/).
-
-For CentOS, we take packages from [SCLo SIG](http://wiki.centos.org/SpecialInterestGroup/SCLo). As a result, the images use RPM packages from the [Software Collections](http://softwarecollections.org).
-
-For RHEL, we install packages from RHEL 7 base or Red Hat [Software Collections](https://access.redhat.com/documentation/en/red-hat-software-collections/).
-
 ## Testing
 
 This organization's images include test suites, which test the images in basic use cases.
-The tests are being run on [Testing Farm](https://docs.testing-farm.io/general/0.1/index.html). Testing is done before the change is merged into the master branch (main branch). Therefore the place for triggering tests on demand is in a Pull Request.
+The tests are being run on [Testing Farm](https://docs.testing-farm.io/). Testing is done before the change is merged into the master branch (main branch). Therefore the place for triggering tests on demand is in a Pull Request.
 
 ### Triggering tests
 
 Tests can be triggered by writing a comment containing a specific string into the Pull Request:
 
-- `[test-all]` - triggers container and OpenShift tests
 - `[test]` - triggers container tests
 - `[test-openshift]` - triggers OpenShift tests
+- `[test-all]` - triggers container and OpenShift tests
 
 **_Only maintainers and owners of the SCLOrg can trigger the tests._**
 
